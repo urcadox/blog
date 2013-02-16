@@ -120,11 +120,11 @@ tagsCtx tags =
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
-    { feedTitle       = "Clément Delafargue - RSS feed"
-    , feedDescription = "Musings about FP and CS"
-    , feedAuthorName  = "Clément Delafargue"
-    , feedAuthorEmail = "clement+blog@delafargue.name"
-    , feedRoot        = "http://blog.clement.delafargue.name"
+    { feedTitle       = "Alexandre Bertaud - blog"
+    , feedDescription = "Stuff I write"
+    , feedAuthorName  = "Alexandre Berthaud"
+    , feedAuthorEmail = "alexandre+blog@berthaud.me"
+    , feedRoot        = "http://blog.alexandre.berthaud.me"
     }
 
 externalizeUrls :: String -> Item String -> Compiler (Item String)
