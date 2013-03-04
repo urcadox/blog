@@ -1,16 +1,27 @@
+@font-face {
+    font-family: 'zwodrei';
+    src: url('fonts/zwodrei_bold_demo-webfont.eot');
+    src: url('fonts/zwodrei_bold_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/zwodrei_bold_demo-webfont.woff') format('woff'),
+         url('fonts/zwodrei_bold_demo-webfont.ttf') format('truetype'),
+         url('fonts/zwodrei_bold_demo-webfont.svg#zwodrei_-_freebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     max-width: 45em;
     min-width: 20em;
     margin: auto;
     padding: 1em;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Fenix', serif;
     font-size: 18px;
     line-height: 1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
-    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-family: zwodrei, sans-serif;
+    font-weight: normal;
 }
 
 p {
