@@ -4,8 +4,6 @@ author: Alexandre Berthaud
 tags: misc
 ---
 
-# Hello World!
-
 Nice blog, ain't it?
 
 You think water moves fast? You should see ice. It moves like it has a mind.

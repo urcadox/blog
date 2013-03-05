@@ -1,36 +1,44 @@
-@font-face {
-    font-family: 'zwodrei';
-    src: url('fonts/zwodrei_bold_demo-webfont.eot');
-    src: url('fonts/zwodrei_bold_demo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/zwodrei_bold_demo-webfont.woff') format('woff'),
-         url('fonts/zwodrei_bold_demo-webfont.ttf') format('truetype'),
-         url('fonts/zwodrei_bold_demo-webfont.svg#zwodrei_-_freebold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+body, div {
+    box-sizing: border-box;
 }
+
+body > header {
+    text-align: center;
+}
+
 body {
-    max-width: 45em;
-    min-width: 20em;
+    background: #FDFDF4;
     margin: auto;
     padding: 1em;
-    font-family: 'Fenix', serif;
-    font-size: 18px;
-    line-height: 1.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25em;
+    width: 600px;
+    color: #3C3C3C;
+}
+
+section.post {
+    font-family: Fenix, serif;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
-    font-family: zwodrei, sans-serif;
-    font-weight: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #222;
 }
 
-p {
+body > header h1 {
+    margin: 1.3em 0;
+}
+
+section.post p {
     margin-bottom: 1.2em;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    color: #333;
+    text-align: justify;
 }
 
 pre {
@@ -39,6 +47,22 @@ pre {
 
 code, pre {
     background-color: #ddd;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #622;
+}
+
+ul {
+    color: #222;
+}
+
+li {
+    color: #444;
 }
 
 body>header h1 {
@@ -50,33 +74,22 @@ body>header h2 {
     font-weight: normal;
 }
 
-body>header a, body>header a:hover {
-    color: black;
-    text-decoration: none;
+body > header h1 a.rel {
+    font-size: 0.7em;
+    color: #3C3C3C;
+    margin-left: 0.1em;
+    -webkit-transition: background linear 0.2s;
+       -moz-transition: background linear 0.2s;
+         -o-transition: background linear 0.2s;
+            transition: background linear 0.2s;
+}
+body > header h1 a.rel:hover {
+    background: #202020;
+    color: #CCC;
 }
 
-menu {
-    padding: 0;
-    margin: 0;
-}
-
-nav {
-    text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-nav a {
-    color: #000;
-    text-decoration: none;
-    padding: 0 2em;
-}
-
-nav a:hover {
-    color: #808080;
-    text-decoration: none;
+.posts h2 {
+    margin-top: 2em;
 }
 
 article header p {
@@ -85,7 +98,7 @@ article header p {
 }
 
 article header {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 article h1 {
@@ -97,8 +110,63 @@ article h2 {
     font-size: 1.5em;
 }
 
+article footer {
+    background: rgba(0, 0, 0, 0.01);
+    padding: 2px 10px;
+    margin: 4em 1em 2em;
+    font-size: 0.8em;
+}
+
+article footer p {
+    margin: 5px 0;
+}
+
 body>footer {
     text-align: center;
-    border-top: 1px solid black;
-    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 5em;
+    padding-top: 2em;
+    font-size: 0.7em;
+}
+
+body > footer .links a {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+      font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 350px) {
+    body {
+      font-size: 1em;
+    }
+    section.post p {
+      line-height: 1.4em;
+    }
+}
+@media screen and (max-width: 300px) {
+    body {
+      font-size: 1em;
+    }
+    body > header h1 {
+      font-size: 1.8em;
+    }
+    section.post p {
+      line-height: 1.3em;
+    }
+}
+@media screen and (max-width: 250px) {
+    body > header h1 {
+      font-size: 1.4em;
+    }
+    section.post p {
+      line-height: 1.2em;
+    }
 }
