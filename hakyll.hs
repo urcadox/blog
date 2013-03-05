@@ -23,6 +23,11 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    -- Copy design images
+    match "img/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- Copy Files
     match "files/*" $ do
         route   idRoute
