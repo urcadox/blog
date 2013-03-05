@@ -82,6 +82,7 @@ main = hakyll $ do
                             defaultContext)
                 >>= loadAndApplyTemplate "templates/default.html"
                         (constField "title" title `mappend`
+                            constField "description" "List of posts" `mappend`
                             defaultContext)
                 >>= relativizeUrls
 
@@ -110,12 +111,14 @@ postCtx =
 allPostsCtx :: Context String
 allPostsCtx =
     constField "title" "All posts" `mappend`
+    constField "description" "List of all my posts" `mappend`
     postCtx
 
 homeCtx :: Tags -> String -> Context String
 homeCtx tags list =
     constField "posts" list `mappend`
     constField "title" "Home" `mappend`
+    constField "description" "Stuff I write (about Scala, JS and stuff)" `mappend`
     field "taglist" (\_ -> renderTagList tags) `mappend`
     defaultContext
 

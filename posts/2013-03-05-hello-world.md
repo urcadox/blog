@@ -2,6 +2,7 @@
 title: Hello World!
 author: Alexandre Berthaud
 tags: misc
+description: Welcome on my new blog!
 ---
 
 > I wanted to be original, so I thought I would make a Hello World post. Here
