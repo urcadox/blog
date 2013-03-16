@@ -5,7 +5,7 @@ tags: android,tip
 description: Sometimes, location by cell towers / wifi starts to fail, here's how to fix it
 ---
 
-This problem happened to me on both my old HTC Wildfire (Android 2.3) and on my
+This problem happened to me on both my old HTC Wildfire (Android 2.3) and my
 current HTC One S (Android 4.1). To keep the trolls away, I know it also
 happened recently on a friend's Galaxy S3.
 
