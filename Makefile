@@ -1,3 +1,5 @@
+port = 9000
+
 all: build
 
 build: hakyll
@@ -11,7 +13,7 @@ new:
 	@./new_post.sh
 
 preview: hakyll
-	./hakyll preview -p 9000
+	./hakyll preview -p $(port)
 
 clean: hakyll
 	./hakyll clean
