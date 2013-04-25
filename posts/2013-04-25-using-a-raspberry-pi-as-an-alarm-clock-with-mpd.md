@@ -113,6 +113,8 @@ With PilotSSH, I don't have this problem anymore. Still, it's simpler to execute
 a command in a single-pane tmux as you can see in this very simple script:
 [Github Gist](https://gist.github.com/urcadox/5438814).
 
+[Screenshot](/files/alarm-pilotssh.png)
+
 ## That's it
 
 I didn't want to go into details to keep this post short, but if you have any
