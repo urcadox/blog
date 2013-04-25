@@ -55,6 +55,7 @@ section.post .caption {
 pre {
     padding: 1em;
     overflow-x: auto;
+    font-size: 0.8em;
 }
 
 code, pre {
