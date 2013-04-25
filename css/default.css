@@ -41,6 +41,17 @@ section.post p {
     text-align: justify;
 }
 
+section.post img {
+  width: 100%;
+}
+
+section.post .caption {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.7em;
+  margin-top: 0;
+  line-height: 0.7em;
+}
+
 pre {
     padding: 1em;
     overflow-x: auto;
