@@ -43,6 +43,7 @@ section.post p {
 
 pre {
     padding: 1em;
+    overflow-x: auto;
 }
 
 code, pre {
