@@ -46,6 +46,9 @@
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-37908250-2']);
       _gaq.push(['_trackPageview']);
+      setTimeout(function() {
+        _gaq.push(['_trackEvent', '30_seconds', 'read'])
+      }, 30000);
 
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
