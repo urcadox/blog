@@ -63,11 +63,14 @@ code, pre {
 }
 
 a {
-    color: black;
+    color: #A72929;
     text-decoration: none;
 }
 a:hover {
-    color: #622;
+    color: #880000;
+}
+section.post a:hover {
+    text-decoration: underline;
 }
 
 ul {
