@@ -84,7 +84,7 @@ main = hakyll $ do
                             defaultContext)
                 >>= loadAndApplyTemplate "templates/default.html"
                         (constField "title" title `mappend`
-                            constField "description" "List of posts" `mappend`
+                            constField "description" ("List of posts about " ++ tag) `mappend`
                             defaultContext)
                 >>= relativizeUrls
 
